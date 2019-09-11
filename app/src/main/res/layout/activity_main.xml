@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtFeijao"
+        android:layout_width="367dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:paddingHorizontal="16dp"
+        android:text="Feijão 1kg - R$ 2,69"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbFeijao"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtFeijao"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLeite"
+        android:layout_width="367dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Leite - R$ 2,70"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFeijao" />
+
+    <CheckBox
+        android:id="@+id/cbLeite"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtLeite"
+        app:layout_constraintTop_toBottomOf="@+id/cbFeijao" />
+
+    <TextView
+        android:id="@+id/txtMacarrao"
+        android:layout_width="367dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Macarrão -  R$ 16,70"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLeite" />
+
+    <CheckBox
+        android:id="@+id/cbMacarrao"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtMacarrao"
+        app:layout_constraintTop_toBottomOf="@+id/cbLeite" />
+
+    <TextView
+        android:id="@+id/txtFarofa"
+        android:layout_width="367dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Farofa - R$ 3,38"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMacarrao" />
+
+    <CheckBox
+        android:id="@+id/cbFarofa"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtFarofa"
+        app:layout_constraintTop_toBottomOf="@+id/cbMacarrao" />
+
+    <TextView
+        android:id="@+id/txtRefrigerante"
+        android:layout_width="367dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Refrigerante - R$3,00"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFarofa" />
+
+    <CheckBox
+        android:id="@+id/cbRefrigerante"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtRefrigerante"
+        app:layout_constraintTop_toBottomOf="@+id/cbFarofa" />
+
+    <TextView
+        android:id="@+id/txtBatataFrita"
+        android:layout_width="367dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:paddingHorizontal="16dp"
+        android:text="Batata Frita - R$5,00"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRefrigerante" />
+
+    <CheckBox
+        android:id="@+id/cbBatataFrita"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txtBatataFrita"
+        app:layout_constraintTop_toBottomOf="@+id/cbRefrigerante" />
+
+    <TextView
+        android:id="@+id/txtFormaPgto"
+        android:layout_width="238dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="Forma de Pagamento:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBatataFrita" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="294dp"
+        android:layout_height="52dp"
+        android:onClick="enviarMensagem"
+        android:text="ENVIAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDesconto" />
+
+    <RadioGroup
+        android:id="@+id/rgFormaPgto"
+        android:layout_width="129dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFormaPgto">
+
+        <RadioButton
+            android:id="@+id/rdDinheiro"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Dinheiro"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rdCartão"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:text="Cartão"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etDesconto"
+        android:layout_width="247dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Qual será o Desconto em R$"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgFormaPgto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
